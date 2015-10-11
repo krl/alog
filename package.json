@@ -1,0 +1,22 @@
+{
+  "name": "uplog",
+  "version": "1.0.0",
+  "description": "Editable log on top of aolog",
+  "main": "index.js",
+  "keywords": [
+    "ipfs", "aolog"
+  ],
+  "Author": "Kristoffer Ström <kristoffer@rymdkoloni.se>",
+  "license": "MIT",
+  "dependencies": {
+    "aolog": "^3.4.0",
+    "async": "^1.4.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "browserify": "^11.0.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/browserify -s Uplog -e ./index.js > dist/uplog.js"
+  }
+}
